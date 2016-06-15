@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="700864b1-f615-4305-96f9-8f03f414b2cc" solutionId="700864b1-f615-4305-96f9-8f03f414b2cc" resetWebServer="false" sharePointProductVersion="15.0" name="LappiaSPWeb.Root" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="LappiaSPWeb.Data.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\LappiaSPWeb.Data\LappiaSPWeb.Data.csproj">
+      <safeControls>
+        <safeControl assemblyName="LappiaSPWeb.Data" namespaceName="LappiaSPWeb.Data" typeName="*" isSafeAgainstScript="false" />
+      </safeControls>
+    </projectOutputAssembly>
+  </assemblies>
+  <features>
+    <featureReference itemId="d8d91e91-76c8-4589-a490-8e046dca7d6d" />
+    <featureReference itemId="e2bcb97e-7e23-4d99-9acc-f28f2e76d6df" />
+    <featureReference itemId="27a6e83c-a6f4-4c95-b01c-d2539d36207b" />
+    <featureReference itemId="5e26ee1e-7fec-4f82-8700-e2467c3f8d0e" />
+    <featureReference itemId="165dcebe-3479-4d94-a09c-b82276ced3b4" />
+    <featureReference itemId="91784c97-8d54-4137-904f-2496a3e71dd5" />
+  </features>
+</package>

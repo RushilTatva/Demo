@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Page (0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39) -->
+  <ContentType ID="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900D40C46DA5CBC4C06A9927C584C7F4B81" Name="CustomMasterPageType" Group="Lappia Content Types" Description="Site Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{AE502131-82C9-4547-B20A-BC3869C45B51}" DisplayName="C11Color" Required="FALSE" Name="C11Color" />
+      <FieldRef ID="{BA7C346C-D620-4582-907F-8FF321218240}" DisplayName="C11Image" Required="FALSE" Name="C11Image" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

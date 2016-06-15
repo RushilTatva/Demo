@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Pages" Url="$Resources:LappiaRoot,Pages">
+    <File Path="Pages\ProjectListing.aspx" Url="ProjectListing.aspx" Type="GhostableInLibrary">
+      <Property Name="Title" Value="$Resources:LappiaRoot,bcProjectListing;"></Property>
+    </File>
+    <File Path="Pages\ProjectDetail.aspx" Url="ProjectDetail.aspx"  Type="GhostableInLibrary">
+      <Property Name="Title" Value="$Resources:LappiaRoot,bcProjectDetail;"></Property>
+    </File>
+    <File Path="Pages\Pagemap.aspx" Url="Pagemap.aspx" Type="GhostableInLibrary">
+      <Property Name="Title" Value="$Resources:LappiaRoot,bcPagemap;"></Property>
+    </File>
+    <File Path="Pages\Testing1.aspx" Url="Testing1.aspx" Type="GhostableInLibrary" >
+      <Property Name="Title" Value="Testing1"/>
+      <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/InnerPagelayout.aspx, Inner PageLayout"/>
+    </File>
+  </Module>
+</Elements>

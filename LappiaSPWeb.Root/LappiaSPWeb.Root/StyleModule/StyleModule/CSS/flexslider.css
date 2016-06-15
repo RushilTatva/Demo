@@ -1,0 +1,64 @@
+
+/* * * * * * Default * * * * * * */
+.flexslider {margin: 0; position: relative; zoom: 1; min-height:250px; }
+.flexslider .slides {zoom:1;}
+.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; position: relative;  }
+.flexslider .slides:after { display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+html[xmlns] .flexslider .slides { display: block; }
+* html .flexslider .slides { height: 1%; }
+.no-js .flexslider .slides > li:first-child { display: block; }
+
+
+/* * * * * * direction arrow * * * * * * */
+.flex-direction-nav {  *height: 0;}
+.flex-direction-nav a { outline:none !important; background:url(../images/control-nav.png) 0px 0px no-repeat; text-decoration: none; display: block; width: 22px; height: 37px; margin: -20px 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; cursor: pointer; text-indent:-10000px;  }
+.flex-direction-nav .flex-prev { left: 15px; background-position:0px 0px; }
+.flex-direction-nav .flex-next { right: 15px; background-position:-22px 0px; }
+.flex-direction-nav .flex-prev:hover { left: 15px; background-position:0px -37px; }
+.flex-direction-nav .flex-next:hover { right: 15px; background-position:-22px -37px; }
+
+
+/* * * * * * control bullet * * * * * * */
+.flex-control-nav { display:none;}
+
+
+/* * * * * * pauseplay button * * * * * * */
+.flex-pauseplay{ display:none; }
+
+
+
+/* * * * * * Custom css * * * * * * */
+#banner h1{ color:#00bfdf; font-size:50px; font-weight:normal; margin:0; padding:15px 0 0 40px; line-height:1;}
+#banner h2{ color:#00bfdf; font-size:38px; font-weight:normal; text-align:right; margin:0; padding:5px 40px 0 0; line-height:1;}
+
+.ban{ height:517px; background-position: center center; background-repeat:no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+/*.img1{ background-image:url(../images/ban1.jpg);}
+.img2{ background-image:url(../images/ban2.jpg);}*/
+
+
+
+@media screen and (max-width: 992px) {
+.ban{ height:380px;} 
+
+#banner h1{font-size:40px; padding:10px 0 0 25px;}
+#banner h2{ font-size:28px;padding:0px 25px 0 0;}
+
+}
+
+
+/*@media screen and (max-width: 767px) {
+.ban{ height:250px; background-position: center top; background-repeat:no-repeat; -webkit-background-size: auto; -moz-background-size: auto; -o-background-size: auto; background-size: auto;  } 
+.img1{ background-image:url(../images/sml_ban1.jpg);}
+.img2{ background-image:url(../images/sml_ban2.jpg);}
+
+#banner h1{font-size:24px; padding:10px 0 0 15px;}
+#banner h2{ font-size:20px;padding:0px 15px 0 0;}
+
+}*/
+
+
+
+
+
+
+

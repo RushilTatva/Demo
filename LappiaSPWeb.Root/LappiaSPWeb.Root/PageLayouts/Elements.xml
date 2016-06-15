@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="PageLayouts" Url="_catalogs/masterpage" >
+    <File Path="PageLayouts\Home.aspx" Url="Home.aspx" Type="GhostableInLibrary" >
+      <Property Name="ContentType" Value="$Resources:LappiaRoot,pcPageLayout;" />
+      <!--<Property Name="PublishingAssociatedContentType" Value="Page Layout Content Types"></Property>-->
+    </File>
+    <File Path="PageLayouts\LappiaHomePageLayout.aspx" Url="LappiaHomePageLayout.aspx" Type="GhostableInLibrary" >
+      <Property Name="Title" Value="Lappia Home PageLayout"></Property>
+      <Property Name="FileLeafRef" Value="LappiaHomePageLayout.aspx" />
+      <Property Name="MasterPageDescription" Value="Lappia Home PageLayout Description"></Property>
+      <Property Name="Page Layout Demo Title" Value="LappiaHomePageLayout" />
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="PublishingHidden" Value="FALSE" />
+      <Property Name="PublishingAssociatedContentType" Value=";#LappiaMasterpageCT;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900D40C46DA5CBC4C06A9927C584C7F4B81;#"></Property>
+      <Property Name="HtmlDesignAssociated" Value="FALSE" />
+      <Property Name="ContentType" Value="$Resources:LappiaRoot,pcPageLayout;" />
+      <Property Name="_ModerationStatus" Value="3" />
+      <Property Name="FileDirRef" Value="_catalogs/masterpage" />
+      <Property Name="FSObjType" Value="0" />
+    </File>
+    <File Path="PageLayouts\LappiaInnerPageLayout.aspx" Url="LappiaInnerPageLayout.aspx" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Lappia Inner PageLayout"></Property>
+      <Property Name="FileLeafRef" Value="LappiaInnerPageLayout.aspx" />
+      <Property Name="MasterPageDescription" Value="Lappia Inner PageLayout Description"></Property>
+      <Property Name="Page Layout Demo Title" Value="LappiaInnerPageLayout" />
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="PublishingHidden" Value="FALSE" />
+      <Property Name="PublishingAssociatedContentType" Value=";#LappiaMasterpageCT;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900D40C46DA5CBC4C06A9927C584C7F4B81;#"></Property>
+      <Property Name="HtmlDesignAssociated" Value="FALSE" />
+      <Property Name="ContentType" Value="$Resources:LappiaRoot,pcPageLayout;" />
+      <Property Name="_ModerationStatus" Value="3" />
+      <Property Name="FileDirRef" Value="_catalogs/masterpage" />
+      <Property Name="FSObjType" Value="0" />
+    </File>
+    <File Path="PageLayouts\LappiaSearchPageLayout.aspx" Url="LappiaSearchPageLayout.aspx"  Type="GhostableInLibrary">
+      <Property Name="Title" Value="Lappia Search PageLayout"></Property>
+      <Property Name="FileLeafRef" Value="LappiaSearchPageLayout.aspx" />
+      <Property Name="MasterPageDescription" Value="Lappia Search PageLayout Description"></Property>
+      <Property Name="Page Layout Demo Title" Value="LappiaSearchPageLayout" />
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="PublishingHidden" Value="FALSE" />
+      <Property Name="PublishingAssociatedContentType" Value=";#LappiaMasterpageCT;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900D40C46DA5CBC4C06A9927C584C7F4B81;#"></Property>
+      <Property Name="HtmlDesignAssociated" Value="FALSE" />
+      <Property Name="ContentType" Value="$Resources:LappiaRoot,pcPageLayout;" />
+      <Property Name="_ModerationStatus" Value="3" />
+      <Property Name="FileDirRef" Value="_catalogs/masterpage" />
+      <Property Name="FSObjType" Value="0" />
+    </File>
+    <File Path="PageLayouts\LappiaArticlePageLayout.aspx" Url="LappiaArticlePageLayout.aspx" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Lappia Article PageLayout"></Property>
+      <Property Name="FileLeafRef" Value="LappiaArticlePageLayout.aspx" />
+      <Property Name="MasterPageDescription" Value="Lappia Article PageLayout Description"></Property>
+      <Property Name="Page Layout Demo Title" Value="LappiaArticlePageLayout" />
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="PublishingHidden" Value="FALSE" />
+      <Property Name="PublishingAssociatedContentType" Value=";#LappiaMasterpageCT;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900D40C46DA5CBC4C06A9927C584C7F4B81;#"></Property>
+      <Property Name="HtmlDesignAssociated" Value="FALSE" />
+      <Property Name="ContentType" Value="$Resources:LappiaRoot,pcPageLayout;" />
+      <Property Name="_ModerationStatus" Value="3" />
+      <Property Name="FileDirRef" Value="_catalogs/masterpage" />
+      <Property Name="FSObjType" Value="0" />
+      <AllUsersWebPart WebPartZoneID="breadCrumb" WebPartOrder="1">
+        <![CDATA[
+        <webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="LappiaSPWeb.Root.Webparts.Breadcrumb.Breadcrumb, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">LappiaSPWeb.Root - Breadcrumb</property>
+        <property name="Description" type="string">My Visual Web Part</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>
+          ]]>
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartZoneID="LeftMenu" WebPartOrder="1">
+        <![CDATA[
+        <webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="LappiaSPWeb.Root.Webparts.LeftNavigationMenu.LeftNavigationMenu, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">LappiaSPWeb.Root - LeftNavigationMenu</property>
+        <property name="Description" type="string">My Visual Web Part</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>
+
+          ]]>
+      </AllUsersWebPart>
+    </File>
+  </Module>
+</Elements>

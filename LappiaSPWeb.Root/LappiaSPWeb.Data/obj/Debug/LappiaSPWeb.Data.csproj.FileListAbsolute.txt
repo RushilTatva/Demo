@@ -1,0 +1,5 @@
+C:\Projects\Education Site\trunk\Source Code\LappiaSPWeb.Root\LappiaSPWeb.Data\bin\Debug\LappiaSPWeb.Data.dll
+C:\Projects\Education Site\trunk\Source Code\LappiaSPWeb.Root\LappiaSPWeb.Data\bin\Debug\LappiaSPWeb.Data.pdb
+C:\Projects\Education Site\trunk\Source Code\LappiaSPWeb.Root\LappiaSPWeb.Data\obj\Debug\LappiaSPWeb.Data.csprojResolveAssemblyReference.cache
+C:\Projects\Education Site\trunk\Source Code\LappiaSPWeb.Root\LappiaSPWeb.Data\obj\Debug\LappiaSPWeb.Data.dll
+C:\Projects\Education Site\trunk\Source Code\LappiaSPWeb.Root\LappiaSPWeb.Data\obj\Debug\LappiaSPWeb.Data.pdb

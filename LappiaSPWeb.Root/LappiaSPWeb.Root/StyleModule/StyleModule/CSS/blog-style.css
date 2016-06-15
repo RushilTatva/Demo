@@ -1,0 +1,301 @@
+﻿/*.ms-core-navigation {
+    display: none !important;
+}
+*/
+
+/*#MSOZoneCell_WebPartWPQ6 {
+    display: none !important;
+}*/
+
+.ms-core-overlay {
+    background-color: none !important;
+}
+
+.ms-blog-postBoxMargin h2 {
+    color: brown !important;
+}
+
+.ms-blog-postBoxDate {
+    background-color: brown!important;
+}
+
+#MSO_ContentTable {
+   
+    margin: 0px auto;
+    width: 1140px;
+}
+
+#pageTitle {
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    width: 900px;
+    height: 42px;
+    text-align: right;
+}
+
+#DeltaPlaceHolderPageTitleInTitleArea {
+    margin: 0px;
+    padding: 0px 20px 0px 0px;
+    font: 14px arial;
+    font-weight: bold;
+    color: #999999;
+    font-size: 26px !important;
+    text-decoration: none;
+}
+
+#contentRow {
+    padding-top: 0px !important;
+}
+
+.ms-breadcrumb-top {
+    display: none;
+}
+
+.ms-breadcrumb-box {
+    vertical-align: bottom !important;
+}
+
+#s4-titlerow {
+    padding-bottom: 0px !important;
+}
+
+.ms-blog-adminLinks {
+    margin-bottom: 0px !important;
+    padding-bottom: 10px !important;
+}
+
+.ms-blog-MainArea {
+    margin-top: 20px !important;
+}
+
+#MSOZoneCell_WebPartWPQ5 {
+    /*margin-top: 20px;*/
+    margin-top: 0px !important;
+}
+
+.ms-comm-adminLinksListNoMargin li:last-child ul li:last-child {
+    display: none !important;
+}
+
+#DeltaSiteLogo {
+    display: none !important;
+}
+
+.ms-breadcrumb-box {
+    padding-left: 140px !important;
+}
+
+.ms-blog-postList li {
+    margin-bottom: 20px !important;
+    border-bottom: 1px dotted #333333 !important;
+    padding-top: 12px !important; 
+}
+
+.ms-blog-postInlineMargin h2 a {
+    margin: 0px !important;
+    padding: 20px 0px 0px 0px !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    color: #990000 !important;
+    text-decoration: none !important;
+    background: url(http://sp2013brijesk:27361/MyBlog/Lists/Photos/h1_background.png) left center no-repeat !important;
+}
+
+.ms-metadata {
+    clear: both !important;
+    margin: 0px!important;
+    color: #3e3939 !important;
+    font-size: 12px !important;
+}
+
+#MSOZoneCell_WebPart {
+    padding: 10px !important;
+    margin-bottom: 0px !important;
+}
+
+
+.ms-comm-adminLinksListNoMargin li:last-child ul li a {
+    margin: 0px !important;
+    color: #604a40 !important;
+    text-decoration: none !important;
+    padding: 4px;
+}
+
+#WebPartWPQ1 {
+    display: none !important;
+}
+
+.ms-splinkbutton-text {
+    text-decoration: none !important;
+}
+
+#WebPartWPQ5:before {
+    background-color: red !important;
+    height: 10px !important;
+}
+
+
+.ms-blog-postBody {
+     font-size: 18px !important;
+    line-height: 1 !important;
+    padding-left: 12px !important;
+    margin: 0 0 10px 0 !important;
+}
+
+.es1 {
+    height: 37px !important;
+
+}
+
+.es2 {
+    height: 37px !important;
+
+}
+
+.es3 {
+    height: 40px !important;
+
+}
+
+.es4 {
+    height: 40px !important;
+
+}
+
+.ms-blog-commandSpace {
+     font-size: 18px !important;
+    line-height: 1 !important;
+    padding-left: 12px !important;
+    margin: 0 0 10px 0 !important;
+    text-align: right !important;
+}
+
+.ms-blog-commandSpace a {
+    font-size: 13px !important;
+    font-weight: normal  !important;
+    text-decoration: none !important;
+}
+
+/*
+#suiteBarLeft {
+    background-color: rgba(239, 239, 239, 0.78) !important;
+}
+
+#s4-ribbonrow, #suiteLinksBox ul, .ms-core-brandingText {
+    display: none !important;
+}*/
+
+.ms-button-emphasize {
+  color: #fff !important;
+  background-color: #00bfdf !important;
+  border-color: #00bfdf !important;
+  padding:5px 15px !important;
+  font-size:16px !important;
+  font-family:Calibri !important;
+  cursor:pointer !important;
+
+}
+.ms-button-emphasize:hover{
+	background-color: #00a7c3 !important;
+
+}
+
+.ms-blog-postDivider {
+    height: 15px !important;
+}
+
+.ms-noWrap ul li {
+    border-bottom-style: none !important;
+}
+
+#suiteBarRight:hover {
+    background-color: rgba(239, 239, 239, 0.78) !important;
+}
+
+.ms-comm-postReplyTextBox {
+    border: solid 1px #604a40 !important;
+}
+
+.ms-blog-postList li:last-child {
+    border: 0px !important;
+}
+
+.ms-blog-postDividerHr{
+    display: none !important;
+}
+#ms-help {
+    display:none !important;
+}
+
+
+/*13.8.2015*/
+
+.ms-accentText, .ms-accentText:visited
+{
+	 font-size: 38px;
+    font-weight: normal;
+    color: #99af2b;
+    margin: 0;
+    /*padding: 0 0 17px 0;*/
+    padding: 0 0 10px 0;
+}
+
+
+.ms-blog-MainArea{
+	min-width: 560px;
+    max-width: none;
+    width: 100%;
+    display: block;
+}
+
+.ms-blog-MainArea tbody {
+    display:block;
+}
+
+.ms-blog-MainArea tbody tr {
+    display:block;
+    width:100%;
+}
+
+.ms-blog-postList{
+ 	 max-width: none;
+    }
+
+.ms-blog-postList li{
+	border-bottom:1px solid #ddd !important; padding-top:0 !important; margin-bottom:15px !important;
+	 }
+.ms-blog-postList h1{
+	font-size:24px !important; color:#009ab4 !important; padding:0; margin:0; font-weight:normal !important;
+}
+.ms-blog-postList h1 a{
+	 color:#009ab4; font-size:24px !important; font-weight:normal !important;
+
+}
+
+.ms-metadata{
+	color:#666 !important;
+}
+.ms-blog-postBody{
+	padding:8px 0 0 0!important;
+}
+.ms-rtestate-field p{
+	padding:0 0 13px 0 !important; margin:0; font-size:16px !important; color:#333 !important; line-height:1.2;
+}
+
+.ms-comm-postReplyTextBox{
+	border:1px solid #ddd !important; min-height:50px !important;
+}
+
+.ms-blog-postList li .ms-core-menu-list li{
+	margin-bottom:0 !important;
+}
+
+
+
+
+
+
+
+
+

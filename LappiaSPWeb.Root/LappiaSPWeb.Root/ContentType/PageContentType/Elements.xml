@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Page Layout (0x01010007FF3E057FA8AB4AA42FCB67B453FFC100E214EEE741181F4E9F7ACC43278EE811) -->
+  <ContentType ID="0x01010007FF3E057FA8AB4AA42FCB67B453FFC100E214EEE741181F4E9F7ACC43278EE81100CFD0A30C59FE434EB31F690FC48FD30F" Name="PageContentType" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{e99a1979-b208-480b-b5d6-38700d4b2703}" DisplayName="C11Color" Required="FALSE" Name="C11Color" />
+      <FieldRef ID="{9da67e2d-37fd-4f6b-8ae7-8f55b577608c}" DisplayName="C11Image" Required="FALSE" Name="C11Image" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

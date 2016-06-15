@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{BA7C346C-D620-4582-907F-8FF321218240}" Name="C11Image" DisplayName="C11Image" Type="Image" Required="FALSE" Group="Lappia Columns"></Field>
+  <Field ID="{AE502131-82C9-4547-B20A-BC3869C45B51}" Name="C11Color" DisplayName="C11Color" Type="Text" Required="FALSE" Group="Lappia Columns"></Field>
+</Elements>

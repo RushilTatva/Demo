@@ -1,0 +1,38 @@
+﻿.real-breadcrumb
+{
+	height:22px;
+	border:1px black solid;
+	background-color:silver;
+	padding-left:10px;
+}
+
+.real-breadcrumb span
+{
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	text-decoration:underline !important;	
+}
+
+.real-breadcrumb span:nth-child(odd)
+{
+	text-decoration:none !important;
+}
+
+.real-breadcrumb span:nth-child(even)
+{
+	
+	text-decoration:underline !important;
+}
+
+
+.real-breadcrumb span:hover 
+{
+	color:maroon !important;
+}
+
+#pageTitle {
+    display: none !important;
+}
+
+

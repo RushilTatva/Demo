@@ -1,0 +1,68 @@
+﻿20-7-2015
+
+1)SliderImages ListTitle display from "LappiaRootListSubscriber" resource file.
+
+2) Always add content type to adult education doc library when it creates new.
+
+3) Create "CarouselEvents" (KaruselliTapahtumat) calendar OOTB. Internal name of list will be same, only display name for Different language site collections will be different.
+
+Fields for this calendar list will be.
+
+	i)    Hinta (Price) Text Field. Default value: "tusarvo Vapaa pääsy." "Free entry"
+	ii)   Tapahtuman tyyppi (Event Type) choice "Konsertti","Seminaari","Messut","Avoimet ovet","Open Doors","tiedot","Juhla","Oma valinta"; "Concert", "Seminar", "Fair","Open Doors","Info","Party","Own choice"
+	iii)  Paikkakunta (City) textfield 
+	iv)   Käyntiosoite (Visit Address) textfield 
+	v)    Tilan nimi (Status) textfield 
+	vi)   Tapahtuman järjestäjä (Organiser) textfield 
+	vii)  Yhteyshenkilö (Contact Person) textfield 
+	viii) Room - Tilan nimi
+
+4) Add content type "AdultEducationDocs" to "AdultEducationDocs".
+
+5) Add "aika" column in News list through listinsatnce(It is calculated column based on "modified" - "=Muokattu")
+6) As per client call with rushil bhai we are waiting for column "Vanhentuu" - (Expiers) confirmition in News List.
+7) When List TemplateType is chnaged then deploy solution with both "List Definition" and "List Instance" on right side in ListInstance Feature.
+8) allow anonymous user on "NewsLetter" list using below steps.
+	i)In Central Admin select web application and click on "Authentication Providers" , a small popup will be opened and click on "Default"
+	ii)Tick on "Enable anonymous access" and save.
+	iii)Go to "fi-fi" and "En-us" site collection and then select site settings - > Site Permissions
+	iv)CLick on  "anonymous access" and select  "Lists and Libraries" then click on ok.
+	v)Now go to List settings in that perticuler list click on "Permissions for this list" , click on "stop inheritance" and click on "anonymous access", in that Tick on "View Item" then ok.
+9) For Media Page, If URL is not accessible then set defaultproxy tag for it in web.config
+	<defaultProxy>
+      <proxy usesystemdefault="false" proxyaddress="http://192.168.0.251:8080" bypassonlocal="true" />
+    </defaultProxy>
+10) For Project listing page create database using "EducationScript.sql" script from "SVN Path\Deployment".
+
+For alternate access mapping
+
+Default : "http://sp13-004:1000" (servername :port)
+Internet : "http://103.241.233.196:1000"(LiveIp : port)
+
+
+11) Always check file should be check In other wise it won't display changes to other users.
+
+12) To enable "Timer Job" go to cental admin then under "Monitoring" section click on "Review Job Definition" from Timer Jobs then find "Lappia news letter timer job".
+
+-------6-10-2015-----------
+
+13) After every deploymnet in live server set both itemstyle in style library
+14) Set CustomStyleEnglish and CustomStyleFinnish css files in both style library for ArticlePageLayout
+(From DeploymnetPackage)
+15) Do not deploy after set Article PageLayout (Use Copy both of Quick Deploy)
+
+16)For News and CarouselEvent value from intanet site to education site deploy latest version of "PageEventReceiver" project to intranet site.
+(Path - (20.253) C:\Users\Administrator\Desktop\Lappia\Ref Project\PageEventReceiver)
+(Three event receivers. i)NewPublishCarouselEvents , ii)NewPublishNews , iii)CreateFields.)
+
+17) In SectionDetails list Title column value must be unique.
+
+18) For mobile view add "<meta name="viewport" content="width=device-width, initial-scale=1">" to masterpage
+
+(http://stackoverflow.com/questions/14304494/responsive-web-design-is-working-on-desktop-but-not-on-mobile-device)
+
+19) Set "SMTPMailPassword" in webconfig and its value is password of mail account.
+(<add key="SMTPMailPassword" value="tMZ4UWli6" /> under <appSettings></appSettings> tag.)
+
+20)Path of htmleditorstyle.css Style Library/en-US/Themable/Core Styles/htmleditorstyle.css
+From this style copy and add customstyles for article page layout page content.

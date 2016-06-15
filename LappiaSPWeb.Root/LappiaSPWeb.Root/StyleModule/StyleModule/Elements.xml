@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="StyleModule" Url="Style Library">
+    <File Path="StyleModule\images\facebook.png" Url="images/facebook.png" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\google_plus.png" Url="images/google_plus.png" Type="GhostableInLibrary"/>
+    <File Path="StyleModule\images\linkedin.png" Url="images/linkedin.png" Type="GhostableInLibrary"/>
+    <File Path="StyleModule\images\twitter.png" Url="images/twitter.png" Type="GhostableInLibrary"/>
+    <File Path="StyleModule\CSS\sharegg.css" Url="CSS/sharegg.css" Type="GhostableInLibrary"/>
+    <File Path="StyleModule\CSS\custom_breadcrumb.css" Url="CSS/custom_breadcrumb.css" Type="GhostableInLibrary"/>
+    <File Path="StyleModule\JS\jquery.min.js" Url="JS/jquery.min.js" Type="GhostableInLibrary"/>
+    <File Path="StyleModule\JS\jquery.sharegg.js" Url="JS/jquery.sharegg.js" Type="GhostableInLibrary"/>
+    <File Path="StyleModule\CSS\animate.css" Url="CSS/animate.css" Type="GhostableInLibrary" />
+    <File Path="StyleModule\CSS\bootstrap.css" Url="CSS/bootstrap.css" Type="GhostableInLibrary" />
+    <File Path="StyleModule\CSS\flexslider.css" Url="CSS/flexslider.css" Type="GhostableInLibrary" />
+    <File Path="StyleModule\CSS\style.css" Url="CSS/style.css" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\ban1.jpg" Url="images/ban1.jpg" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\ban2.jpg" Url="images/ban2.jpg" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\control-nav.png" Url="images/control-nav.png" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\downArrow.png" Url="images/downArrow.png" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\ic-search.png" Url="images/ic-search.png" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\img1.png" Url="images/img1.png" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\img2.png" Url="images/img2.png" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\img3.png" Url="images/img3.png" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\img4.jpg" Url="images/img4.jpg" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\img5.jpg" Url="images/img5.jpg" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\img6.jpg" Url="images/img6.jpg" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\logo.png" Url="images/logo.png" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\menu-icon.png" Url="images/menu-icon.png" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\nav_ar.png" Url="images/nav_ar.png" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\sml_ban1.jpg" Url="images/sml_ban1.jpg" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\sml_ban2.jpg" Url="images/sml_ban2.jpg" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\social.png" Url="images/social.png" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\social_sml.png" Url="images/social_sml.png" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\upArrow.png" Url="images/upArrow.png" Type="GhostableInLibrary" />
+    <File Path="StyleModule\JS\bootstrap.min.js" Url="JS/bootstrap.min.js" Type="GhostableInLibrary" />
+    <File Path="StyleModule\JS\jquery.flexslider-min.js" Url="JS/jquery.flexslider-min.js" Type="GhostableInLibrary" />
+    <File Path="StyleModule\JS\script.js" Url="JS/script.js" Type="GhostableInLibrary" />
+    <File Path="StyleModule\JS\viewportchecker.js" Url="JS/viewportchecker.js" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\bul1.png" Url="images/bul1.png" Type="GhostableInLibrary"/>
+    <File Path="StyleModule\images\bul2.png" Url="images/bul2.png" Type="GhostableInLibrary"/>
+    <File Path="StyleModule\images\noimg.jpg" Url="images/noimg.jpg" Type="GhostableInLibrary"/>
+    <File Path="StyleModule\images\inner_banner.jpg" Url="images/inner_banner.jpg" Type="GhostableInLibrary" />
+    <File Path="StyleModule\images\inner_banner2.jpg" Url="images/inner_banner2.jpg" Type="GhostableInLibrary" />
+  </Module>
+</Elements>

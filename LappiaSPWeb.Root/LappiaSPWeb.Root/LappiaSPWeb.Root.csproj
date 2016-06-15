@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{64CCA622-D0D0-4196-8FCE-32E38769D57E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LappiaSPWeb.Root</RootNamespace>
+    <AssemblyName>LappiaSPWeb.Root</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Publishing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Taxonomy, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Taxonomy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EventReceiver\ListEventReceiver\ListEventReceiver.cs" />
+    <Compile Include="Features\LappiaSPWeb.Root.Branding\LappiaSPWeb.Root.EventReceiver.cs">
+      <DependentUpon>LappiaSPWeb.Root.Branding.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\LappiaSPWeb.Root.Pages\LappiaSPWeb.Root.EventReceiver.cs">
+      <DependentUpon>LappiaSPWeb.Root.Pages.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceClass\GetResources.cs" />
+    <Compile Include="Resources\LappiaRoot.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LappiaRoot.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\LappiaRoot.fi-fi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LappiaRoot.fi-fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\AdvCarousel\AdvCarousel.ascx.cs">
+      <DependentUpon>AdvCarousel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\AdvCarousel\AdvCarousel.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdvCarousel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\BannerWebpart\BannerWebpart.ascx.cs">
+      <DependentUpon>BannerWebpart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\BannerWebpart\BannerWebpart.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BannerWebpart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Breadcrumb\Breadcrumb.ascx.cs">
+      <DependentUpon>Breadcrumb.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Breadcrumb\Breadcrumb.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Breadcrumb.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LatestEvents\LatestEvents.ascx.cs">
+      <DependentUpon>LatestEvents.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LatestEvents\LatestEvents.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LatestEvents.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LatestMedia\LatestMedia.ascx.cs">
+      <DependentUpon>LatestMedia.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LatestMedia\LatestMedia.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LatestMedia.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LatestNews\LatestNews.ascx.cs">
+      <DependentUpon>LatestNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LatestNews\LatestNews.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LatestNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LeftNavigationMenu\LeftNavigationMenu.ascx.cs">
+      <DependentUpon>LeftNavigationMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LeftNavigationMenu\LeftNavigationMenu.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeftNavigationMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\News\News.ascx.cs">
+      <DependentUpon>News.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\News\News.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>News.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Pagemap\Pagemap.ascx.cs">
+      <DependentUpon>Pagemap.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Pagemap\Pagemap.ascx.g.cs" />
+    <Compile Include="Webparts\ProjectDetail\ProjectDetail.ascx.cs">
+      <DependentUpon>ProjectDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\ProjectDetail\ProjectDetail.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\ProjectListing\ProjectListing.ascx.cs">
+      <DependentUpon>ProjectListing.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\ProjectListing\ProjectListing.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectListing.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_GlobalResources\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{19c812c9-de45-457a-9e3d-f4c6ae255b57}</SharePointProjectItemId>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Branding\MasterPage\LappiaBreadCrumb.master" />
+    <None Include="Branding\MasterPage\LappiaCustomMasterPage.master" />
+    <None Include="Branding\MasterPage\LappiaMasterPage.master" />
+    <None Include="Branding\MasterPage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b5f4df19-49fd-459a-b416-2a0bd5a28f95}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentType\CustomMasterPageType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{86f45a38-6218-46b0-8cf8-bf9544229d79}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentType\PageContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{041688d9-90e2-4f3f-b46a-aa530805ae17}</SharePointProjectItemId>
+    </None>
+    <None Include="EventReceiver\ListEventReceiver\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9afe28e2-fae4-4642-b304-714933d4d050}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\LappiaSPWeb.Root.ListInstance\LappiaSPWeb.Root.ListInstance.feature">
+      <FeatureId>{91784c97-8d54-4137-904f-2496a3e71dd5}</FeatureId>
+    </None>
+    <None Include="Features\LappiaSPWeb.Root.Resource\LappiaSPWeb.Root.Resource.feature">
+      <FeatureId>{165dcebe-3479-4d94-a09c-b82276ced3b4}</FeatureId>
+    </None>
+    <None Include="Features\LappiaSPWeb.Root.Pages\LappiaSPWeb.Root.Pages.feature">
+      <FeatureId>{5e26ee1e-7fec-4f82-8700-e2467c3f8d0e}</FeatureId>
+    </None>
+    <None Include="Features\LappiaSPWeb.Root.Webparts\LappiaSPWeb.Root.Webparts.feature">
+      <FeatureId>{27a6e83c-a6f4-4c95-b01c-d2539d36207b}</FeatureId>
+    </None>
+    <None Include="Features\LappiaSPWeb.Root.StyleModule\LappiaSPWeb.Root.StyleModule.feature">
+      <FeatureId>{e2bcb97e-7e23-4d99-9acc-f28f2e76d6df}</FeatureId>
+    </None>
+    <None Include="Features\LappiaSPWeb.Root.Branding\LappiaSPWeb.Root.Branding.feature">
+      <FeatureId>{d8d91e91-76c8-4589-a490-8e046dca7d6d}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="ListInstance\SectionDetails\SectionDetailsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f7f349f9-e7ea-4461-a3ad-7769853263df}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstance\SectionDetails\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{adcf7ef5-66c9-47ad-9e5b-24a4aecd5a04}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{700864b1-f615-4305-96f9-8f03f414b2cc}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="PageLayouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1c7cd556-fc80-47d8-a393-8a4afc68740a}</SharePointProjectItemId>
+    </None>
+    <None Include="Pages\Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{163bb93e-fb24-42a0-8a58-c10e1932c5dd}</SharePointProjectItemId>
+    </None>
+    <None Include="Resources\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{367ac33e-cc72-4f16-a3fb-f1edfba35cc5}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteColumns\C11Image\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{672b12d3-b25d-4d5d-b7bf-441d42036213}</SharePointProjectItemId>
+    </None>
+    <None Include="StyleModule\StyleModule\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ad545877-9d04-46df-beed-150a6ec3fab9}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\AdvCarousel\AdvCarousel.webpart" />
+    <None Include="Webparts\AdvCarousel\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{013cfd02-b666-41aa-a8e7-81987a532be1}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\BannerWebpart\BannerWebpart.webpart" />
+    <None Include="Webparts\BannerWebpart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{644e0bff-2f56-4073-b83f-56cfab3ead8f}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\Breadcrumb\Breadcrumb.webpart" />
+    <None Include="Webparts\Breadcrumb\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c64e7f24-0fce-4ec2-9dad-b7f3c63df45f}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\LatestEvents\LatestEvents.webpart" />
+    <None Include="Webparts\LatestEvents\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{02373c99-41e7-476a-bb15-b6db6ddd179e}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\LatestMedia\LatestMedia.webpart" />
+    <None Include="Webparts\LatestMedia\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{778388c8-2c07-49d0-a9f9-1e7ac4086ca6}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\LatestNews\LatestNews.webpart" />
+    <None Include="Webparts\LatestNews\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7da63ed5-df7a-4cd7-b7b8-6ddf7b9e6b10}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\LeftNavigationMenu\LeftNavigationMenu.webpart" />
+    <None Include="Webparts\LeftNavigationMenu\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7c034fdb-23c1-4c94-b106-4e3c10e15109}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\News\News.webpart" />
+    <None Include="Webparts\News\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b35c35ce-8343-42fc-ae01-e966cd844dc5}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\Pagemap\Pagemap.webpart" />
+    <None Include="Webparts\Pagemap\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{09c09d1b-6822-46e1-9590-f6ade7e0aa1d}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\ProjectDetail\ProjectDetail.webpart" />
+    <None Include="Webparts\ProjectDetail\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3288bc0d-2b42-4aa0-8333-2b769ecc5454}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\ProjectListing\ProjectListing.webpart" />
+    <None Include="Webparts\ProjectListing\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{085c2f76-fe43-43c6-8564-755d40c9a6d4}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DeveloperGuide\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Elements.xml" />
+    <Content Include="Branding\MasterPage\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ContentType\CustomMasterPageType\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ContentType\PageContentType\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EventReceiver\ListEventReceiver\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Features\LappiaSPWeb.Root.ListInstance\LappiaSPWeb.Root.ListInstance.Template.xml">
+      <DependentUpon>LappiaSPWeb.Root.ListInstance.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\LappiaSPWeb.Root.Resource\LappiaSPWeb.Root.Resource.Template.xml">
+      <DependentUpon>LappiaSPWeb.Root.Resource.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\LappiaSPWeb.Root.Pages\LappiaSPWeb.Root.Pages.Template.xml">
+      <DependentUpon>LappiaSPWeb.Root.Pages.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\LappiaSPWeb.Root.Webparts\LappiaSPWeb.Root.Webparts.Template.xml">
+      <DependentUpon>LappiaSPWeb.Root.Webparts.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\LappiaSPWeb.Root.StyleModule\LappiaSPWeb.Root.StyleModule.Template.xml">
+      <DependentUpon>LappiaSPWeb.Root.StyleModule.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\LappiaSPWeb.Root.Branding\LappiaSPWeb.Root.Branding.Template.xml">
+      <DependentUpon>LappiaSPWeb.Root.Branding.feature</DependentUpon>
+    </Content>
+    <Content Include="ListInstance\SectionDetails\Elements.xml" />
+    <Content Include="ListInstance\SectionDetails\Schema.xml" />
+    <Content Include="ListInstance\SectionDetails\SectionDetailsInstance\Elements.xml" />
+    <Content Include="PageLayouts\CustomPageLayout.aspx" />
+    <Content Include="PageLayouts\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PageLayouts\Home.aspx" />
+    <Content Include="PageLayouts\InnerPagelayout.aspx" />
+    <Content Include="Pages\Pages\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Pages\Pagemap.aspx" />
+    <Content Include="Pages\Pages\ProjectDetail.aspx" />
+    <Content Include="Pages\Pages\ProjectListing.aspx" />
+    <Content Include="Pages\Pages\Testing1.aspx" />
+    <Content Include="SiteColumns\C11Image\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="StyleModule\StyleModule\CSS\animate.css" />
+    <Content Include="StyleModule\StyleModule\CSS\bootstrap.css" />
+    <Content Include="StyleModule\StyleModule\CSS\custom_breadcrumb.css" />
+    <Content Include="StyleModule\StyleModule\CSS\flexslider.css" />
+    <Content Include="StyleModule\StyleModule\CSS\sharegg.css" />
+    <Content Include="StyleModule\StyleModule\CSS\style.css" />
+    <Content Include="StyleModule\StyleModule\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="StyleModule\StyleModule\images\ban1.jpg" />
+    <Content Include="StyleModule\StyleModule\images\ban2.jpg" />
+    <Content Include="StyleModule\StyleModule\images\bul1.png" />
+    <Content Include="StyleModule\StyleModule\images\bul2.png" />
+    <Content Include="StyleModule\StyleModule\images\control-nav.png" />
+    <Content Include="StyleModule\StyleModule\images\downArrow.png" />
+    <Content Include="StyleModule\StyleModule\images\facebook.png" />
+    <Content Include="StyleModule\StyleModule\images\google_plus.png" />
+    <Content Include="StyleModule\StyleModule\images\ic-search.png" />
+    <Content Include="StyleModule\StyleModule\images\img1.png" />
+    <Content Include="StyleModule\StyleModule\images\img2.png" />
+    <Content Include="StyleModule\StyleModule\images\img3.png" />
+    <Content Include="StyleModule\StyleModule\images\img4.jpg" />
+    <Content Include="StyleModule\StyleModule\images\img5.jpg" />
+    <Content Include="StyleModule\StyleModule\images\img6.jpg" />
+    <Content Include="StyleModule\StyleModule\images\inner_banner.jpg" />
+    <Content Include="StyleModule\StyleModule\images\inner_banner2.jpg" />
+    <Content Include="StyleModule\StyleModule\images\linkedin.png" />
+    <Content Include="StyleModule\StyleModule\images\logo.png" />
+    <Content Include="StyleModule\StyleModule\images\menu-icon.png" />
+    <Content Include="StyleModule\StyleModule\images\nav_ar.png" />
+    <Content Include="StyleModule\StyleModule\images\noimg.jpg" />
+    <Content Include="StyleModule\StyleModule\images\sml_ban1.jpg" />
+    <Content Include="StyleModule\StyleModule\images\sml_ban2.jpg" />
+    <Content Include="StyleModule\StyleModule\images\social.png" />
+    <Content Include="StyleModule\StyleModule\images\social_sml.png" />
+    <Content Include="StyleModule\StyleModule\images\twitter.png" />
+    <Content Include="StyleModule\StyleModule\images\upArrow.png" />
+    <Content Include="StyleModule\StyleModule\JS\bootstrap.min.js" />
+    <Content Include="StyleModule\StyleModule\JS\jquery.flexslider-min.js" />
+    <Content Include="StyleModule\StyleModule\JS\jquery.min.js" />
+    <Content Include="StyleModule\StyleModule\JS\jquery.sharegg.js" />
+    <Content Include="StyleModule\StyleModule\JS\script.js" />
+    <Content Include="StyleModule\StyleModule\JS\viewportchecker.js" />
+    <Content Include="Webparts\AdvCarousel\AdvCarousel.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>AdvCarousel.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\AdvCarousel\Elements.xml" />
+    <Content Include="Webparts\BannerWebpart\BannerWebpart.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>BannerWebpart.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\BannerWebpart\Elements.xml" />
+    <Content Include="Webparts\Breadcrumb\Breadcrumb.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Breadcrumb.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\Breadcrumb\Elements.xml" />
+    <Content Include="Webparts\LatestEvents\Elements.xml" />
+    <Content Include="Webparts\LatestEvents\LatestEvents.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>LatestEvents.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\LatestMedia\Elements.xml" />
+    <Content Include="Webparts\LatestMedia\LatestMedia.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>LatestMedia.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\LatestNews\Elements.xml" />
+    <Content Include="Webparts\LatestNews\LatestNews.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>LatestNews.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\LeftNavigationMenu\Elements.xml" />
+    <Content Include="Webparts\LeftNavigationMenu\LeftNavigationMenu.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>LeftNavigationMenu.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\News\Elements.xml" />
+    <Content Include="Webparts\News\News.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>News.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\Pagemap\Elements.xml" />
+    <Content Include="Webparts\Pagemap\Pagemap.ascx" />
+    <Content Include="Webparts\ProjectDetail\Elements.xml" />
+    <Content Include="Webparts\ProjectDetail\ProjectDetail.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ProjectDetail.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\ProjectListing\Elements.xml" />
+    <Content Include="Webparts\ProjectListing\ProjectListing.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ProjectListing.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\LappiaRoot.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LappiaRoot.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\LappiaRoot.fi-fi.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LappiaRoot.fi-fi.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LappiaSPWeb.Common\LappiaSPWeb.Common.csproj">
+      <Project>{99763c43-2804-4eec-854c-72cf95cbfec5}</Project>
+      <Name>LappiaSPWeb.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LappiaSPWeb.Data\LappiaSPWeb.Data.csproj">
+      <Project>{38b1cfeb-5167-4b26-be5b-ab0a866b5513}</Project>
+      <Name>LappiaSPWeb.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

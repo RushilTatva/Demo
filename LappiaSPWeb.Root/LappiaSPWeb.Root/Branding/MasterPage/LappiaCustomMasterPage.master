@@ -1,0 +1,231 @@
+﻿<%@ Master Language="C#" %>
+
+<%@ Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Import Namespace="Microsoft.SharePoint" %>
+<%@ Assembly Name="Microsoft.Web.CommandUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
+<%@ Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="wssuc" TagName="Welcome" Src="~/_controltemplates/15/Welcome.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<head runat="server">
+    <meta name="GENERATOR" content="Microsoft SharePoint" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <%--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="Expires" content="0" />--%>
+    <link href="../../../Style Library/CSS/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../../../Style Library/CSS/style.css" rel="stylesheet" type="text/css" />
+    <link href="../../../Style Library/CSS/flexslider.css" rel="stylesheet" type="text/css" />
+    <link href="../../../Style Library/CSS/animate.css" rel="stylesheet" type="text/css" />
+
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+    <SharePoint:AjaxDelta ID="DeltaSPWebPartManager" runat="server">
+        <WebPartPages:SPWebPartManager ID="SPWebPartManager1" runat="Server" />
+    </SharePoint:AjaxDelta>
+    <div id="s4-workspace" class="ms-core-overlay">
+        <div id="s4-bodyContainer">
+            <div id="contentRow">
+                <div id="contentBox"
+                    aria-live="polite" aria-relevant="all">
+                    <!-- wrapper start -->
+                    <div id="wrapper">
+                        <div class="jaa">
+                            JAA
+    <ul>
+        <li><a href="#" class="fb"></a></li>
+        <li><a href="#" class="twt"></a></li>
+        <li><a href="#" class="gp"></a></li>
+        <li><a href="#" class="in"></a></li>
+    </ul>
+                        </div>
+                        <!-- header start -->
+                        <header id="header">
+    <div class="logo"><img src="../../../Style Library/images/logo.png" alt=""></div>
+    <div class="language"><a href="#">ENG</a><a href="#">SVE</a></div>
+    <div class="search"><div class="search_field"><input name="" type="text"><input name="" type="image" class="btn_search" src="../../../Style Library/images/ic-search.png"></div></div>
+    <nav id="navigation">  
+  	<a class="toggleMenu" href="#"></a>
+    <ul class="menu">
+        <li class="top"><a href="#" class="navlink">HAKIJALLE</a></li>
+        <li class="top"><a href="#" class="navlink">TYÖELÄMÄLLE</a>
+          <div class="subnav">
+          	<div class="wthfix">
+              <div class="row">
+              	<div class="col-sm-4">
+                  <h3><a href="#">Degree finder</a></h3>
+				  <h3><a href="#">During your studies</a></h3>
+                  <ul>
+                  	<li><a href="#">Information on studies and degrees</a></li>
+                  	<li><a href="#">Individualize your degree</a></li>
+                  	<li><a href="#">Apply for a grant</a></li>
+                  	<li><a href="#">Order a transcript</a></li>
+                  	<li><a href="#">Academic year and teaching periods</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-4 navbox">
+                  <h3><a href="#">How to apply</a></h3>
+                  <ul>
+                  	<li><a href="#">Bachelor’s studies</a></li>
+                  	<li><a href="#">Master’s studies</a></li>
+                  	<li><a href="#">Doctoral studies</a></li>
+                  	<li><a href="#">Exchange Studies</a></li>
+                  	<li><a href="#">Other study options</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-4 navbox">
+                  <h3><a href="#">New Students</a></h3>
+                  <ul>
+                  	<li><a href="#">Environment</a></li>
+                  	<li><a href="#">Before arrival</a></li>
+                  	<li><a href="#">Housing</a></li>
+                  	<li><a href="#">Plan your studies</a></li>
+                  	<li><a href="#">Arriving and setting in</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="top"><a href="#" class="navlink">OPISKELIJALLE</a></li>
+        <li class="top"><a href="#" class="navlink">LAPPIA</a></li>
+    </ul>  
+  </nav>
+  </header>
+                        <!-- header end -->
+
+                        <div id="notificationArea" class="ms-notif-box"></div>
+
+                        <SharePoint:AjaxDelta ID="DeltaPlaceHolderMain" BlockElement="true" IsMainContent="true" runat="server">
+                            <a id="mainContent" name="mainContent" tabindex="-1"></a>
+                            <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server" />
+                        </SharePoint:AjaxDelta>
+
+                        <!-- footer start -->
+                        <footer id="footer">
+  
+    <div class="sociallink">
+      <div class="social">
+        <div class="col5"><a href="#" title="facebook" class="sl facebook"></a></div>
+        <div class="col5"><a href="#" title="twitter" class="sl twitter"></a></div>
+        <div class="col5"><a href="#" title="instagram" class="sl instagram"></a></div>
+        <div class="col5"><a href="#" title="youtube" class="sl youtube"></a></div>
+        <div class="col5"><a href="#" title="ask" class="sl ask"></a></div>
+      </div>
+    </div>
+    
+    <div class="wthfix footbottom">
+      <div class="footerlink">
+        <div class="row">
+          <div class="col-sm-3 col-md-3">
+            <h5>Koulutusalat</h5>
+            <ul>
+            	<li><a href="#">Hyvinvointiala</a></li>
+                <li><a href="#">Kulttuuriala</a></li>
+                <li><a href="#">Luontoala</a></li>
+                <li><a href="#">Palveluala</a></li>
+                <li><a href="#">Tekniikan ala</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <h5>Opinnot</h5>
+            <ul>
+            	<li><a href="#">Nuorten koulutus</a></li>
+                <li><a href="#">Aikuiskoulutus</a></li>
+                <li><a href="#">Oppisopimus</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <h5>Yhteystiedot</h5>
+            <ul>
+            	<li><a href="#">Toimipaikat</a></li>
+            	<li><a href="#">Henkilökunta</a></li>
+            	<li><a href="#">Aikuiskoulutus ja</a></li>
+            	<li><a href="#">hankepalvelut</a></li>
+            	<li><a href="#">Oppisopimustoimisto</a></li>
+            	<li><a href="#">Asiakastyöt</a></li>
+            	<li><a href="#">Ravintolat ja kahvilat</a></li>
+            	<li><a href="#">Laskutusosoite</a></li>
+            	<li><a href="#">Kuntayhtymä</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <h5>Koulutuskuntayhtymä</h5>
+            <ul>
+            	<li><a href="#">Esittely</a></li>
+            	<li><a href="#">Organisaatio</a></li>
+            	<li><a href="#">Tehtävät</a></li>
+            	<li><a href="#">Strategia, arvot, tunnusluvut</a></li>
+            	<li><a href="#">Yhtymäpalvelut</a></li>
+            	<li><a href="#">Päätöksenteko</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="addresslink"><a href="#">Sivukartta</a> | <a href="#">Tietoa sivustosta</a> | <a href="#">Palaute</a> | <a href="linkto:ammattiopisto@lappia.fi">ammattiopisto@lappia.fi</a> | Ammattiopisto Lappia Urheilukatu 6, 95400 Tornio</div>
+    </div>
+    
+  </footer>
+                        <!-- footer end -->
+
+                    </div>
+                    <!-- wrapper end -->
+
+                    <script type="text/javascript" src="../../../Style Library/JS/jquery.min.js"></script>
+                    <script type="text/javascript" src="../../../Style Library/JS/bootstrap.min.js"></script>
+                    <script src="../../../Style Library/JS/jquery.flexslider-min.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                        $(window).load(function () {
+                            $('.flexslider').flexslider({
+                                animation: "slide",
+                                animationLoop: true,
+                                pausePlay: true
+                            });
+                        });
+                    </script>
+                    <script type="text/javascript" src="../../../Style Library/JS/viewportchecker.js"></script>
+                    <script type="text/javascript">
+                        jQuery(document).ready(function () {
+
+
+
+                            jQuery('.sec1block').addClass("hidden1").viewportChecker({
+                                classToAdd: 'visible1 animated bounceInRight',
+                                offset: 100
+                            });
+                            jQuery('.social').addClass("hidden1").viewportChecker({
+                                classToAdd: 'visible1 animated bounceInRight',
+                                offset: 100
+                            });
+                            jQuery('.sec3').addClass("hidden1").viewportChecker({
+                                classToAdd: 'visible1 animated bounceInLeft',
+                                offset: 100
+                            });
+
+                        });
+                    </script>
+                    <script type="text/javascript" src="../../../Style Library/JS/script.js"></script>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <SharePoint:AjaxDelta ID="DeltaPlaceHolderUtilityContent" runat="server">
+        <asp:ContentPlaceHolder ID="PlaceHolderUtilityContent" runat="server" />
+    </SharePoint:AjaxDelta>
+    <SharePoint:ScriptBlock ID="ScriptBlock1" runat="server">
+        var g_Workspace = "s4-workspace";
+    </SharePoint:ScriptBlock>
+</body>
